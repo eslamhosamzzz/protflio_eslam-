@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1b1b1b;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00d8ff;
+      margin-bottom: 1rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background-color: #ffffff10;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .project h2 {
+      margin-top: 0;
+      color: #00d8ff;
+    }
+    .project p {
+      color: #e0e0e0;
+    }
+    .project a {
+      color: #00d8ff;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #1b1b1b;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+    .social-links a {
+      color: #00d8ff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+    .cv-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #00d8ff;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .cv-button:hover {
+      background-color: #00a5cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="1.jpg" alt="My photo" class="profile-pic" />
+    <h1>eslam hossam</h1>
+    <p>Selected Projects</p>
+  </header>
+  <main>
+    <div class="project-gallery">
+      <section class="project">
+        <h2>Supermarket Management System (Java)</h2>
+        <p>A Java-based application that simulates basic supermarket functions like adding items, calculating totals, and managing inventory using arrays and functions.</p>
+        <p><strong>Languages:</strong> Java</p>
+      </section>
+
+      <section class="project">
+        <img src="2.jpg" alt="Smart Farm Project" />
+        <h2>Smart Farm IoT System (Team Project)</h2>
+        <p>A collaborative IoT project for automating smart farm monitoring. The system tracks temperature, soil moisture, and water levels using sensors, and displays real-time data through a dashboard. Developed with a team using Arduino, NodeMCU, and cloud integration.</p>
+        <p><strong>Technologies:</strong> IoT, Arduino, NodeMCU, HTML, CSS, Firebase</p>
+      </section>
+
+      <section class="project">
+        <h2>Robotic Arm Control System (Team Project)</h2>
+        <p>Designed and built a robotic arm that can be controlled remotely using Arduino and Bluetooth modules. The project involved circuit design, servo motor integration, and real-time control using a mobile app.</p>
+        <p><strong>Technologies:</strong> Arduino, Bluetooth, Mobile App, Servo Motors</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact Me</p>
+    <div class="social-links">
+      <a href="eeeslma82@gmail.com">Email</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="www.linkedin.com/in/eslma-hossam-eldine-9420062b4" target="_blank">LinkedIn</a>
+    </div>
+    <a href="cv.pdf" class="cv-button" download>Download My CV</a>
+  </footer>
+</body>
+</html>
